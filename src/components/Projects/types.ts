@@ -3,6 +3,5 @@ export interface Project {
   description: string;
   image: string;
   tech: string[];
-  liveUrl: string;
   githubUrl: string;
 }

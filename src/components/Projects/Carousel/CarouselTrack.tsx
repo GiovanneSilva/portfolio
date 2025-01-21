@@ -2,7 +2,7 @@ import React from 'react';
 import { useCarousel } from './CarouselContext';
 
 interface CarouselTrackProps {
-  children: React.ReactNode[];
+  children: React.ReactNode;
 }
 
 const CarouselTrack: React.FC<CarouselTrackProps> = ({ children }) => {
@@ -16,11 +16,7 @@ const CarouselTrack: React.FC<CarouselTrackProps> = ({ children }) => {
         transform: `translateX(-${(currentIndex * 100) / totalSlides}%)`
       }}
     >
-      {children.map((slide, index) => (
-        <div key={index} className="w-full h-full flex-shrink-0">
-          {slide}
-        </div>
-      ))}
+      {children}
     </div>
   );
 };

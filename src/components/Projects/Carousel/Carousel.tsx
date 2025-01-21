@@ -13,7 +13,11 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
     <CarouselProvider totalSlides={slides.length}>
       <div className="relative h-[450px] overflow-hidden rounded-xl bg-white shadow-lg">
         <CarouselTrack>
-          {slides}
+          {slides.map((slide, index) => (
+            <div key={index} style={{ width: `${100 / slides.length}%` }} className="h-full flex-shrink-0">
+              {slide}
+            </div>
+          ))}
         </CarouselTrack>
         <CarouselNavigation />
         <CarouselDots />
