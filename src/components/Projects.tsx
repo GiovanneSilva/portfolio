@@ -1,5 +1,3 @@
-import React from 'react';
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
 import ProjectSlide from './Projects/ProjectSlide';
 import Carousel from './Projects/Carousel/Carousel';
 
