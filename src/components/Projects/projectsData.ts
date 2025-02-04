@@ -18,7 +18,14 @@ export const projects = [
     title: 'Mark - L Task Manager',
       description: 'Hands-on project applying tests to a local task management application using the Playwright testing framework in TypeScript.',
       image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
-      tech: ['Yarn', 'TypeScript', 'Playwright'],
+      tech: ['TypeScript', 'Yarn', 'Playwright'],
       githubUrl: 'https://github.com/GiovanneSilva/playwright---mark',
   },
+  {
+    title: 'UAT-Tests-Cypress-TypeScript',
+    description: 'This is a professional test automation framework built with Cypress, focusing on authentication scenarios. The implementation follows best practices and design patterns to ensure maintainable and reliable tests.',
+    image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800',
+    tech: ['TypeScript', 'Node.js', 'Cypress'],
+    githubUrl: 'https://github.com/GiovanneSilva/UAT-Tests-Cypress-TypeScript',
+  }
 ];
